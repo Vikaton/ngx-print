@@ -124,7 +124,8 @@ public returnStyleValues() {
     }
 
     printContents = document.getElementById(this.printSectionId).innerHTML;
-    popupWin = window.open("", "_blank", "top=0,left=0,height=auto,width=auto");
+    // popupWin = window.open("", "_blank", "top=0,left=0,height=auto,width=auto");
+    popupWin = window.open("", `_blank", "top=0,left=0,height=${screen.height * 0.8},width=${screen.width * 0.8}`);
     popupWin.document.open();
     popupWin.document.write(`
       <html>
